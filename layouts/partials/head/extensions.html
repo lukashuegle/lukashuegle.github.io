@@ -1,0 +1,46 @@
+<!-- Schema.org Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Lukas Hügle",
+  "url": "https://lukashuegle.de",
+  "image": "https://lukashuegle.de/images/lukashuegle.jpg",
+  "jobTitle": "Cybersecurity Expert & Founder",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Venedy"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Karlsruhe Institute of Technology"
+  },
+  "knowsAbout": [
+    "Cybersecurity",
+    "API Security",
+    "Cloud Security",
+    "DevSecOps",
+    "Penetration Testing",
+    "AI Security",
+    "Machine Learning Security"
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/in/lukas-hügle-a316a5153/",
+    "https://github.com/lukashuegle",
+    "https://venedy.io"
+  ],
+  "email": "info@lukashuegle.de"
+}
+</script>
+
+<!-- Additional Open Graph tags for better social sharing -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+{{ if .Params.image }}
+<meta property="og:image" content="{{ .Params.image | absURL }}" />
+<meta name="twitter:image" content="{{ .Params.image | absURL }}" />
+{{ else }}
+<meta property="og:image" content="{{ "images/lukashuegle.jpg" | absURL }}" />
+<meta name="twitter:image" content="{{ "images/lukashuegle.jpg" | absURL }}" />
+{{ end }}
+<meta name="twitter:card" content="summary_large_image" />

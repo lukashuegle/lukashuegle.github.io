@@ -1,0 +1,127 @@
+baseURL = 'https://lukashuegle.de/'
+languageCode = 'en-us'
+title = 'Lukas Hügle'
+theme = 'hugo-coder'
+
+# Enable emoji support
+enableEmoji = true
+
+# SEO Configuration
+enableRobotsTXT = true
+canonifyURLs = true
+
+# Sitemap configuration
+[sitemap]
+  changefreq = 'weekly'
+  filename = 'sitemap.xml'
+  priority = 0.5
+
+# Pagination for blog listing
+[pagination]
+  pagerSize = 10
+
+# Taxonomies for blog posts
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  author = "authors"
+  series = "series"
+
+[params]
+  author = "Lukas Hügle"
+  description = "Personal website of Lukas Hügle - Cybersecurity Expert, Founder of Venedy. Here I share my experiences, projects and thoughts on cybersecurity topics."
+  keywords = "Lukas Hügle,cybersecurity,API security,cloud security,DevSecOps,penetration testing,AI security"
+  info = ["Cybersecurity Expert & Founder", "Venedy"]
+  avatarURL = "images/lukashuegle.jpg"
+
+  # Professional footer text
+  footercontent = "Personal website of Lukas Hügle | Hack Yourself First"
+  hideFooter = false
+  hideCredits = false
+  hideCopyright = false
+
+  # Date format
+  since = 2026
+
+  # Git Commit information
+  commit = ""
+
+  # Right To Left Language
+  rtl = false
+
+  # Color scheme
+  colorScheme = "auto"
+  hideColorSchemeToggle = false
+
+  # Custom CSS
+  customCSS = []
+  customSCSS = []
+  customJS = []
+
+# Social links
+[[params.social]]
+  name = "Website"
+  icon = "fa fa-globe fa-2x"
+  weight = 1
+  url = "https://venedy.io"
+
+[[params.social]]
+  name = "Email"
+  icon = "fa fa-envelope fa-2x"
+  weight = 2
+  url = "mailto:info@lukashuegle.de"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa fa-linkedin fa-2x"
+  weight = 3
+  url = "https://www.linkedin.com/in/lukas-hügle-a316a5153/"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "fa fa-github fa-2x"
+  weight = 4
+  url = "https://github.com/lukashuegle"
+
+# Menu Configuration
+[languages.en]
+  languageName = "English"
+
+  [languages.en.menu]
+    [[languages.en.menu.main]]
+      name = "About"
+      weight = 1
+      url = "about/"
+
+    [[languages.en.menu.main]]
+      name = "Journey"
+      weight = 2
+      url = "journey/"
+
+    [[languages.en.menu.main]]
+      name = "Publications & Talks"
+      weight = 3
+      url = "publications/"
+
+    [[languages.en.menu.main]]
+      name = "Blog"
+      weight = 4
+      url = "posts/"
+
+    [[languages.en.menu.main]]
+      name = "Legal Notice"
+      weight = 5
+      url = "impressum/"
+
+    [[languages.en.menu.main]]
+      name = "Privacy Policy"
+      weight = 6
+      url = "datenschutz/"
+
+# Markup configuration
+[markup]
+  [markup.highlight]
+    style = "github-dark"
+
+  [markup.goldmark.renderer]
+    unsafe = true
